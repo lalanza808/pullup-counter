@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pullup Counter</title>
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/normalize.css"/>
+    <link rel="stylesheet" href="/static/css/dopetrope.css"/>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <section id="header">
+         <h1><a href="/">Go Back</a></h1>
+          <nav id="nav">
+          <div class="search">
+            <p class="large">Successfully Added pullups!</p>
+          </div>
+          </nav>
+      </section>
+      {% block content %}
+      {% endblock content %}
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <div id="copyright">
+                  <ul class="links">
+                    <li><a href="https://html5up.net" target=_blank>Design by HTML5 UP</a></li>
+                    <li><a href="https://github.com/lalanza808/pullup-counter" target=_blank>Read the source</a></li>
+                    <li><a href="https://github.com/lalanza808/pullup-counter/issues/new" target=_blank>File a bug or request</a></li>
+                    <li><a href="https://twitter.com/lza_menace" target=_blank>Holler at me dog</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

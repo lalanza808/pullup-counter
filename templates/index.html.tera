@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pullup Counter</title>
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/normalize.css"/>
+    <link rel="stylesheet" href="/static/css/dopetrope.css"/>
+    <link rel="stylesheet" href="/static/css/flatpickr.min.css"/>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/flatpickr.min.js"></script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <section id="header">
+         <h1><a href="/">Pullup Counter</a></h1>
+          <nav id="nav">
+          <div class="search">
+            <form action="/add" method="post">
+              <input type="text" name="pullups" placeholder="Enter the amount of pullups you did.">
+              <input type="text" name="datetime" placeholder="Enter the date and time when you did pullups." id="datetimepicker">
+              <input type="submit" value="Add Pullups">
+            </form>
+          </div>
+          </nav>
+      </section>
+      {% block content %}
+      {% endblock content %}
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <div id="copyright">
+                  <ul class="links">
+                    <li><a href="https://html5up.net" target=_blank>Design by HTML5 UP</a></li>
+                    <li><a href="https://github.com/lalanza808/pullup-counter" target=_blank>Read the source</a></li>
+                    <li><a href="https://github.com/lalanza808/pullup-counter/issues/new" target=_blank>File a bug or request</a></li>
+                    <li><a href="https://twitter.com/lza_menace" target=_blank>Holler at me dog</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    var t = new Date();
+    $('#datetimepicker').flatpickr({
+        enableTime: true,
+        enableSeconds: true,
+        dateFormat: "Y-m-d H:i:S",
+        defaultDate: t
+    });
+  </script>
+</html>
